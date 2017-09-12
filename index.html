@@ -13,14 +13,21 @@
 </head>
     
     <body>
-     <div id="container">
-        <header id="header">
+     <div class='row'>
+        <div class='col-12 border'>
+           <header id="header">
              
             <h1>Web Ninja</h1>
        
            
-           </header>     
-        <nav id="nav">
+           </header>
+         
+        </div>
+     </div>
+     <div class='row'>
+<!-- end header-->
+        <div class='col-12 border'>
+           <nav id="nav">
              <ul class="button-wrap">
                  <button>Schedule</button>
                  <button>CSS</button>
@@ -28,9 +35,13 @@
                  <button>Responsive Design</button>
              </ul>
             
-        </nav>    
-        <div id="middle-wrapper">
-           <div id="middle-wrapper-width">
+           </nav>
+         
+        </div>
+     </div>        
+<!--end menu            -->
+        <div class='row'>
+           <div class="col-8 border">
                 <div id="main-content-wrapper">
                     <div class="side-by-side">
                         <section class="image-content">
@@ -51,14 +62,12 @@
                     <section id="skills">
                         <h5>
                             SKILLS: <span> html | css | javascript | git</span>
-                        
                         </h5>
-                    
                     </section>
-                  
-               
-               </div>            
+               </div>
+            </div>
                <!--end main-content-wrapper-->
+            <div class='col-4 border'>
                 <div id="aside-content-wrapper">
                     <aside id="aside-right">
                         <h3>Latest Work</h3>
@@ -75,9 +84,7 @@
                     
                     </aside>
                 </div>
-             <!--end aside-content-wrapper-->
-               
-              <!--end max-width--> 
+             <!--end aside-content-wrapper--> 
             </div>
              <!--end middle-wrapper-->
             
@@ -85,18 +92,26 @@
          
            
            
-           <div id='favorite-sites'>
-             <ul>
-                <li><img src='images/Facebook.png'></li>
-                <li><img src="images/Instagram.jpg"></li>
-                <li><img src="images/Twitter.png"></li>
-             </ul>
+           <div id='favorite-sites' class='row'>
+             
+               <div class='col-4 border'> 
+                <img src='images/Facebook.png'>
+               </div> 
+               <div class='col-4 border'>             
+                <img src="images/Instagram.jpg">
+               </div>
+               <div class='col-4 border'>
+                <img src="images/Twitter.png">
+               </div>   
+             
 
            </div> 
          
-         
-     <footer><h1>Footy</h1></footer>       
-    </div>
+     <div class='row'>
+        <div class='col-12 border'>
+            <footer><h1>Footy</h1></footer>
+         </div>    
+     </div>
     <script src="js/main.js"></script>
     </body>
 

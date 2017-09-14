@@ -15,7 +15,6 @@ body {
 }
 
 #header {
-    width:100%;
     background-color: none;
     min-height: 80px;
 }
@@ -29,7 +28,6 @@ body {
 }
 
 #nav {
-    width: 100%;
     background-color: #3979b2;
     min-height: 80px;
 /*    font-family: 'lato', sans-serif;*/
@@ -37,56 +35,68 @@ body {
 }
 #nav > ul {
     text-align: center;
-    padding: 0;
+    padding: 15px 0 15px 0;
     margin: 0;
-    transform: translateY(50%);
 }
 
 #nav > ul > button {
-    min-width: 120px;
+    min-width: 178px;
     color: white;
     background-color: #B28B60;
     border: none;
     padding: 15px 32px;
     transition: background-color .25s;
+    border-bottom: 2px solid #3979b2;
+
 }
 
 #nav > ul > button:hover {
      background-color: #FFDA9E;
 }
 
+/*
 .menu {
     display: flex;
     background:#e2f0fd;
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
+    position: relative;
+    transform: translateY(100%);
+    font-family: 'Lato', sans-serif;
 }
 
 #middle-wrapper-width {
     display: flex;
-/*    font-family: 'lato', sans-serif;*/
+    font-family: 'lato', sans-serif;
     max-width: 960px;
     margin: 0 auto;
 }
 
 #middle-wrapper {
-    
+    background-color: none;
+    margin: 0 auto;
+}
+*/
+
+#main-content-wrapper {
+    background-color: #fff;
 }
 
 .side-by-side {
-    display: flex;
+    
 }
 
 #main-content-wrapper .image-content {
     text-align: center;
-    width: 50%;
+    margin: 0 auto;
     margin-top: 50px;
 }
 
 .image-content > img {
     max-width: 200px;
     border-radius: 50%;
+    border: 4px #FFD084 solid;
 }
 
 .image-content > h4 {
@@ -104,8 +114,7 @@ body {
 }
 
 #main-content-wrapper article {
-    width: 50%;
-    margin-top: 100px;
+    
 }
 
 #main-content-wrapper article h2 {
@@ -129,8 +138,9 @@ body {
 
 #aside-content-wrapper {
     background-color: white;
-    width: 35%;
 /*    font-family: 'lato', sans-serif;*/
+    background-color: #fff;
+    margin-top: 50px;
 }
 
 #aside-right {
@@ -169,6 +179,7 @@ padding-top: 15px;
     background-image: url(img/bg.jpeg);
     border-top:5px #FFD084 solid;
     border-bottom: 5px #3979B2 solid;
+    text-align: center;
 }
 
 #favorite-sites ul {
@@ -190,4 +201,9 @@ footer {
 footer > h1 {
     margin: 0;
     transform: translateY(50%);
+}
+
+.max-width {
+    margin: 0 auto;
+    max-width: 960px;
 }
